@@ -1,0 +1,25 @@
+Types of Software Testing
+ Test Tiering
+ - Unit Testing - Used to testing smallest blocks of code/functionality e.g. methods - usually written by dev if undergoing Test Driven Development (TDD)
+ - Integration Testing - Testing two or more compoments as a group, used to determing that multiple components are interacting properly i.e. one method is calling another class's method and testing error state handling
+ - System (Endt To End) Testing - Testing the entire software as a whole, usually the final tests run after unit and integration tests
+ 
+ - Smoke Testing - mininal set of tests used to cover testing of the most important core functionality of the software/application
+ - Performance Testing - Tests used to determine how optimized a process or feature of a software is
+ - Regression Testing - Used to retest previously developed software, usually run with pre-written automation that if possible is also run with Continuous Integration (CI)
+ - Accessibility Testing - Testing used to see how accessible the software is to people with vaious forms of disabilities - Web Content Accessibility Guidelines (WCAG) 2
+ 
+ Testing is divided in test cases, and in general we cannot test every single scenario in an application because there are effectively an infinite number of scenarios
+ but we still run tests to show the presence of defects and mininize the number of them that gets exposed to customers
+ 
+ Black Box Testing - Testing without in depth knowlegde how a software functions
+	- Equivalence partitioning - only test partitions of inputs that are equivalent to one another once to mininize amount of testing
+	- Boundary value analysis - Boundaries are very likely places for errors to occur - test at boundary and around it
+	- Requirement based testing - validating all the Acceptance Criteria given for a piece of software
+ While Box Testing
+	- Statement coverage: In this technique, the aim is to traverse all statement at least once. Hence, each line of code is tested. 
+	- Branch Coverage: In this technique, test cases are designed so that each branch from all decision points are traversed at least once.
+	- Condition Coverage: In this technique, all individual conditions must be covered 
+	- Multiple Condition Coverage: In this technique, all the possible combinations of the possible outcomes of conditions are tested at least once
+	- Loop Testing: Loops are widely used and these are fundamental to many algorithms hence, their testing is very important. Errors often occur at the beginnings and ends of loops.
+	

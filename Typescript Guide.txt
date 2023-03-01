@@ -1,0 +1,13 @@
+in the path where the ts file resides:
+
+run: npx tsc .\[filename].ts
+
+Then once the js file is compiled, you can run it by:
+
+run: node .\[filename].js
+
+IF a tsconfig json file is created in the path, then just running tsc without the file name will also work, by default it will include all the ts files when building
+
+Running a script:
+
+run: npm run build
